@@ -1,12 +1,12 @@
 # 486mlproject
 
-Data sources:
+## Data sources:
 
 * https://www.kaggle.com/datasets/vishalsubbiah/pokemon-images-and-types
 
 * https://pokeapi.co/docs/v2#pokemon
 
-Files:
+## Files:
 
 * pokemon.csv: CSV that comes from the Kaggle dataset.  It contains the Pokemon name and type(s).
 
