@@ -2,9 +2,9 @@
 
 ## Sources:
 
-* https://www.kaggle.com/datasets/vishalsubbiah/pokemon-images-and-types
+* https://www.kaggle.com/datasets/vishalsubbiah/pokemon-images-and-types (Kaggle dataset of Pokemon images)
 
-* https://pokeapi.co/docs/v2#pokemon
+* https://pokeapi.co/docs/v2#pokemon (website with all kinds of data involving Pokemon)
 
 * https://medium.com/m2mtechconnect/classifying-pok%C3%A9mon-images-with-machine-learning-79b9bc07c080 (a resource for some EDA that was done on the Kaggle dataset)
 
