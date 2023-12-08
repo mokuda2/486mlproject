@@ -12,6 +12,12 @@ What patterns can a player find to predict the type of a Pokémon he has never s
 
 From the data scraped off the PokeAPI website, any Pokémon game player knows that evolved forms of Pokémon have higher base stats than their pre-evolved forms.  To avoid the issue of the wide ranges of base stats among a Pokémon and its evolved forms, I used ratios of base stats.  For simplicity, I divided all base stats by speed except for speed itself.  In a way, it "standardizes" the base stats.  For example, Charmander has base stats of 52 for attack and 65 for speed, while its most evolved form Charizard has base stats of 84 for attack and 100 for speed.  Charmander's base stats are much lower than Charizard's, even though they are both Fire type.  Attack divided by speed gives Charmander a .80 ratio and Charizard a .84 ratio, which are much more similar.
 
+I also created boxplots to see the distributions of the ratios for Pokémon by type.  The graph below shows boxplots for the hp-speed ratio.
+
+![Figure](https://raw.githubusercontent.com/mokuda2/my386blog/main/assets/images/boxplot-hp-speed-ratio.png)
+
+I then created a data frame of the Pokémon that were outliers for each of the ratios.  The data frame includes 337 Pokémon.  Due to the high number of Pokémon that had outlier ratios, I decided to keep them in the dataset instead of throwing them out.
+
 You can also take a look at my [EDA blog post](https://mokuda2.github.io/my386blog/2023/03/26/eda.html) for more insights into the PokeAPI website's data.
 
 ## Overview of Models Tried
