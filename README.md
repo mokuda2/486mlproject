@@ -8,7 +8,9 @@
 
 * https://medium.com/m2mtechconnect/classifying-pok%C3%A9mon-images-with-machine-learning-79b9bc07c080 (a resource for some EDA that was done on the Kaggle dataset)
 
-## Files:
+## Files and Directories:
+
+* images/images: directory of Pokemon images.
 
 * pokemon.csv: CSV that comes from the Kaggle dataset.  It contains the Pokemon name and type(s).
 
