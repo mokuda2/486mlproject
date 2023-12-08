@@ -25,7 +25,7 @@ You can also take a look at my [EDA blog post](https://mokuda2.github.io/my386bl
 Below are the following models I used for the image classification dataset:
 
 * convolutional neural network: a neural network especially designed for recognizing patterns in image data.  Hyperparameters I used include the activation function, input shape, and number of hidden layers.  When evaluating the model on predicting from all 18 types, the testing accuracy is only .14.  When evaluating the model on just two types, specifically Bug vs. Fire, the testing accuracy is .71.
-* feed forward neural network: a neural network that only goes forward and doesn't back propagate.  Hyperparameters I used include the activation function, input shape, and number of hidden layers.  When evaluating the model on predicting from all 18 types, the testing accuracy is only .21.  When evaluating the model on just two types, specifically Bug vs. Fire, the testing accuracy is .68.
+* feed forward neural network: a neural network that is a multilayer perceptron and uses backpropagation to update its weights and errors.  Hyperparameters I used include the activation function, input shape, and number of hidden layers.  When evaluating the model on predicting from all 18 types, the testing accuracy is only .21.  When evaluating the model on just two types, specifically Bug vs. Fire, the testing accuracy is .68.
 
 Below are the following models I used for the PokeAPI dataset:
 
@@ -44,7 +44,7 @@ For binary classification between Fire type and Bug type, training and testing a
 
 ## Detailed Discussion on Best Model
 
-For the images dataset for binary classification, the model that performs better is the convolutional neural network.  Compared to the feed forward neural network, it makes sense because CNNs are typically used for image data, and FFNs only go forward in their neural networks.  One of the big differences between tuning a CNN model with a target variable with 18 outcomes and a CNN model with a binary target variable is that the last layer for the binary classification can be sigmoid, which is what logistic regression models use.  The binary classification model metrics for training and validation accuracies are shown below for the CNN model.  The testing accuracy is .71.
+For the images dataset for binary classification, the model that performs better is the convolutional neural network.  Compared to the feed forward neural network, it makes sense because CNNs are especially suited for image data.  One of the big differences between tuning a CNN model with a target variable with 18 outcomes and a CNN model with a binary target variable is that the last layer for the binary classification can be sigmoid, which is what logistic regression models use.  The binary classification model metrics for training and validation accuracies are shown below for the CNN model.  The testing accuracy is .71.
 
 ![Figure](https://raw.githubusercontent.com/mokuda2/my386blog/main/assets/images/cnn-graph.png)
 
@@ -68,6 +68,6 @@ As far as the interpretability of the KNN model, the default value for k is 5, m
 
 ## Conclusion and Next Steps
 
-To reiterate, the best model from the image classification dataset is the convolutional neural network model, and the best model from the PokeAPI dataset is the KNN model.  CNNs can perform well on image data, so that model works well for the Pokémon images.  The KNN's model performance trumping the other models shows that even a simple model can be a great model.
+To reiterate, the best model from the image classification dataset is the convolutional neural network model, and the best model from the PokeAPI dataset is the KNN model.  CNNs can perform well on image data, so CNNs work well for the Pokémon images.  The KNN's model performance trumping the other models shows that even a simple model can be a great model.
 
 As far as potential future steps, I would do binary classification for all combinations of two types and compare the models' metrics.  Maybe the model performances will be different, and the random forest model or the ensemble model may outperform KNN.  I also think it would be interesting to figure out a way for a model to take the two types that have the highest probability for being predicted and then running the model again on just those two types.  That way, the model may have better prediction metrics; the common theme is that binary classification models perform a lot better than models that try to predict one of the 18 types.
