@@ -1,5 +1,9 @@
 # 486mlproject
 
+## Purpose:
+
+Classifying the type of a Pokemon based on its image or base stats.
+
 ## Sources:
 
 * https://www.kaggle.com/datasets/vishalsubbiah/pokemon-images-and-types (Kaggle dataset of Pokemon images)
