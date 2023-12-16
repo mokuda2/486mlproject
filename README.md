@@ -16,6 +16,8 @@ Classifying the type of a Pokemon based on its image or base stats.
 
 * images/images: directory of Pokemon images.
 
+* Pokemon Type Classification.ipynb: notebook with code for EDA and different models. 
+
 * pokemon.csv: CSV that comes from the Kaggle dataset.  It contains the Pokemon name and type(s).
 
 * pokemon_type_and_base_stats.csv: scraped directly from the PokeAPI website that contains the type and base stats of each Pokemon.
